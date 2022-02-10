@@ -248,7 +248,7 @@ Options
 
 .options > section > img {
   background-color: var(--darker);
-  height: 100px;
+  height: 12vw;
   width: 65%;
 }
 
