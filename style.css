@@ -202,6 +202,15 @@ header > section:last-child {
   float: right;
 }
 
+header > section:last-of-type > a {
+  color: var(--darker);
+  background-color: var(--lightest);
+  border-radius: 5%;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 3% 5%;
+}
+
 
 /*------------------------
 Hero 
@@ -209,7 +218,8 @@ Hero
 
 .hero, 
 .why,
-.volunteer {
+.volunteer,
+.options {
   padding: 5vw 3vw;
 }
 
@@ -237,7 +247,6 @@ Options
 -------------------------*/
 
 .options {
-  padding: 3vw;
   column-count: 2;
 }
 
