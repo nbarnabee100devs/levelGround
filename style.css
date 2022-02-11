@@ -75,14 +75,13 @@ nav > section {
 
 a {
   text-decoration: none;
-  display: inline-block;
 }
 
 ul > li + li {
   padding-left: 1vw;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -90,11 +89,21 @@ ul > li + li {
 
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+
+.options a,
+.volunteer a {
+  border: 1px solid var(--darker);
+  padding: 1vw 0;
+  width: 12vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
 
 /*------------------------------
 Colors
@@ -233,6 +242,11 @@ Hero
   margin: 0 auto;
 }
 
+.hero a {
+  display: inline-block;
+  background: url("./images/play_icon.svg") no-repeat;
+  padding: 0 calc(3% + 5px) 0.5%;
+}
 
 /*------------------------
 Why/Volunteer
@@ -281,8 +295,9 @@ Contact & Footer
 footer  {
   position: relative;
   padding: 2.5%;
-  height: 16vw;
+  height: 18vw;
   font-size: .8rem;
+  overflow: auto;
 }
 
 footer {
