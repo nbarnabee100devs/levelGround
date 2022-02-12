@@ -295,9 +295,7 @@ Contact & Footer
 footer  {
   position: relative;
   padding: 2.5%;
-  height: 18vw;
   font-size: .8rem;
-  overflow: auto;
 }
 
 footer {
@@ -319,9 +317,14 @@ footer > address {
   width: 22ch;
 }
 
+nav {
+  margin-bottom: 3%;
+}
+
 pre {
   padding-top: 5px;
 }
+
 
 .media-links img {
   width: 20px;
@@ -330,12 +333,11 @@ pre {
 
 
 .legal {
-  position: absolute;
-  bottom: 1%;
   height: 3vw;
   width: 95%;
   border-top: 1px solid white;
-  padding: 1% 0;
+  padding-top: 1%;
+  clear: both;
 }
 
 
